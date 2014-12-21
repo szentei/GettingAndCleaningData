@@ -10,26 +10,28 @@ The repository contains the following files:
 
 + __run_analysis.R__: the script performing the analysis and creating tidy data set from the source data.
 + __CodeBook.md__: a code book that describes the variables, the data, and any transformations or work that is performed to clean up the data.
-+ __Readme.md__: this is to explain how the script works.
++ __README.md__: this is to give an overview of the project and the repository, and to explain how the script works.
 
 Usage
 ----------------------
-There is a script called `run_analysis.R`, that is to be used as follows.
+There is a script in this repository called `run_analysis.R`, that is to be used as follows.
 ### run_analysis.R
 ##### Preconditions
 The script expects the source data to be extracted into the "UCI HAR Dataset" folder in the working directory. The source data can be downloaded from the following URL: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 ##### Input
-The script has no input parameters, as input it uses the following files:
+The script has no input parameters. As input it uses the following data files:
 
-+ ./UCI HAR Dataset/train/X_train.txt
-+ ./UCI HAR Dataset/test/X_test.txt
-+ ./UCI HAR Dataset/train/y_train.txt
-+ ./UCI HAR Dataset/test/y_test.txt
-+ ./UCI HAR Dataset/train/subject_train.txt
-+ ./UCI HAR Dataset/test/subject_test.txt
-+ ./UCI HAR Dataset/features.txt
-+ ./UCI HAR Dataset/activity_labels.txt
++ __./UCI HAR Dataset/train/X_train.txt__: Training set.
++ __./UCI HAR Dataset/test/X_test.txt__: Test set.
++ __./UCI HAR Dataset/train/y_train.txt__: Training labels.
++ __./UCI HAR Dataset/test/y_test.txt__: Test labels.
++ __./UCI HAR Dataset/train/subject_train.txt__: It is for the training data set. Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
++ __./UCI HAR Dataset/test/subject_test.txt__: It is for the test data set. Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
++ __./UCI HAR Dataset/features.txt__: List of all features.
++ __./UCI HAR Dataset/activity_labels.txt__: Links the class labels with their activity name.
 
+More information on source data can be found in the info files provided with the source data, and at the following site: 
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 ##### Output
 The script produces two widely formatted data sets as data frames:
 
