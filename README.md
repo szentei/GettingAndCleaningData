@@ -14,13 +14,23 @@ The repository contains the following files:
 
 Usage
 ----------------------
-There is only one script called `run_analysis.R`, that is to be used as follows.
+There is a script called `run_analysis.R`, that is to be used as follows.
 ### run_analysis.R
 ##### Preconditions
 The script expects the source data to be extracted into the "UCI HAR Dataset" folder in the working directory. The source data can be downloaded from the following URL: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-##### Input parameters
-The script has no parameters.
-##### Output result set
+##### Input
+The script has no input parameters, as input it uses the following files:
+
++ ./UCI HAR Dataset/train/X_train.txt
++ ./UCI HAR Dataset/test/X_test.txt
++ ./UCI HAR Dataset/train/y_train.txt
++ ./UCI HAR Dataset/test/y_test.txt
++ ./UCI HAR Dataset/train/subject_train.txt
++ ./UCI HAR Dataset/test/subject_test.txt
++ ./UCI HAR Dataset/features.txt
++ ./UCI HAR Dataset/activity_labels.txt
+
+##### Output
 The script produces two widely formatted data sets as data frames:
 
 + __rawData__: raw data combined in one data set.
@@ -36,4 +46,4 @@ The script performs tha following execution steps:
 4. Appropriately labels the data set with descriptive variable names. 
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-More information can be found in comments of the script.
+More information can be found in the comments of the script.
